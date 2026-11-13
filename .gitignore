@@ -1,3 +1,5 @@
 .claude/
+graphify-out/
+raw/graphify-out/
 .DS_Store
 Thumbs.db
