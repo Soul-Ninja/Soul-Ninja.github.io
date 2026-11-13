@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aman Joshi | AI, Security and Systems</title>
 <meta name="description" content="Aman Joshi, B.Tech CSE (AI & ML) student in New Delhi. Builder of APIGuard, Debunkit and Ledgio: applied AI, security engineering and privacy-first software.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050505'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23f5222d' stroke-width='2'/%3E%3Cpath d='M16 2v6M16 24v6M2 16h6M24 16h6' stroke='%23f5222d' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23f5222d'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#050505">
+
+<!-- OpenGraph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://soul-ninja.github.io/">
+<meta property="og:title" content="Aman Joshi | AI, Security and Systems">
+<meta property="og:description" content="Applied AI builder. Security engineering and privacy-first craft. Builder of APIGuard, Debunkit and Ledgio.">
+<meta property="og:image" content="https://soul-ninja.github.io/assets/portrait.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://soul-ninja.github.io/">
+<meta name="twitter:title" content="Aman Joshi | AI, Security and Systems">
+<meta name="twitter:description" content="Applied AI builder. Security engineering and privacy-first craft. Builder of APIGuard, Debunkit and Ledgio.">
+<meta name="twitter:image" content="https://soul-ninja.github.io/assets/portrait.webp">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
@@ -221,8 +236,13 @@ mark{background:rgba(245,34,45,.14);color:var(--accent);border:1px solid rgba(24
 .contact .btn{border-color:#050505}.contact .btn::before{background:#050505}
 .contact .btn:hover,.contact .btn:focus-visible{color:var(--accent);border-color:#050505}
 .contact :focus-visible{outline-color:#050505}
-.mail{display:inline-block;font:700 clamp(1.05rem,3.7vw,2.9rem)/1.2 var(--serif);letter-spacing:.04em;margin:26px 0 34px;text-decoration:none;overflow-wrap:anywhere;background:linear-gradient(var(--accent),var(--accent)) left bottom/0 2px no-repeat;transition:background-size .6s var(--out),color .3s}
+.copy-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;margin:24px 0 32px}
+.mail{display:inline-block;font:700 clamp(1.05rem,3.7vw,2.9rem)/1.2 var(--serif);letter-spacing:.04em;margin:0;text-decoration:none;overflow-wrap:anywhere;background:linear-gradient(var(--accent),var(--accent)) left bottom/0 2px no-repeat;transition:background-size .6s var(--out),color .3s}
 .mail:hover,.mail:focus-visible{background-size:100% 2px;color:var(--accent)}
+.copy-pill{border:1px solid #050505;color:#050505;background:transparent;padding:6px 16px;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:background .25s var(--out),color .25s;min-height:36px}
+.copy-pill:hover,.copy-pill:focus-visible{background:#050505;color:var(--accent)}
+.copynotice{min-height:1.4em;font-size:11px;letter-spacing:.18em;font-weight:700;color:#050505;opacity:0;transition:opacity .3s var(--out)}
+.copynotice.show{opacity:1}
 .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .btn{position:relative;display:inline-block;min-height:44px;padding:14px 26px;border:1px solid var(--line);text-decoration:none;overflow:hidden;transition:color .35s,border-color .35s}
 .btn::before{content:"";position:absolute;inset:0;background:var(--accent);transform:translateY(101%);transition:transform .45s var(--out);z-index:-1}
@@ -302,7 +322,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <p>Graph-guided API authorization and BOLA detection engine, aligned to OWASP API Security #1. Deterministic scanner with zero LLM calls, shipped as a CLI and a GitHub Action.</p>
           <p class="fact">100% recall on indirect BOLA where the baseline scored 0%.</p>
           <ul class="chips mono"><li>Python</li><li>FastAPI</li><li>React 19</li><li>TypeScript</li><li>SARIF</li></ul>
-          <div class="links mono"><a href="https://soul-ninja.github.io/APIGuard/">Live demo</a><a href="https://github.com/Soul-Ninja/APIGuard">Source</a></div>
+          <div class="links mono"><a href="https://soul-ninja.github.io/APIGuard/" target="_blank" rel="noopener noreferrer">Live demo</a><a href="https://github.com/Soul-Ninja/APIGuard" target="_blank" rel="noopener noreferrer">Source</a></div>
         </article>
         <article class="card">
           <span class="no" aria-hidden="true">02</span>
@@ -311,7 +331,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <p>AI-assisted misinformation detection for headlines, URLs and articles. Live web evidence and transparent verdicts with reasoning and source receipts.</p>
           <p class="fact">Hybrid pipeline: LLM reasoning, a trained ML model and an offline NLP engine.</p>
           <ul class="chips mono"><li>Python</li><li>Flask</li><li>NLP</li><li>RAG</li><li>scikit-learn</li></ul>
-          <div class="links mono"><a href="https://debunkit-production.up.railway.app">Live demo</a><a href="https://github.com/Soul-Ninja/Debunkit">Source</a></div>
+          <div class="links mono"><a href="https://debunkit-production.up.railway.app" target="_blank" rel="noopener noreferrer">Live demo</a><a href="https://github.com/Soul-Ninja/Debunkit" target="_blank" rel="noopener noreferrer">Source</a></div>
         </article>
         <article class="card">
           <span class="no" aria-hidden="true">03</span>
@@ -320,7 +340,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <p>Private, offline-first personal finance ledger and installable PWA. Budgeting, loan tracker, biometric vault and optional cloud sync.</p>
           <p class="fact">No ads, no trackers, no paywalls.</p>
           <ul class="chips mono"><li>Vanilla JS</li><li>PWA</li><li>WebAuthn</li><li>Supabase</li></ul>
-          <div class="links mono"><a href="https://ledgio.pages.dev/">Live app</a><a href="https://github.com/Soul-Ninja/Ledgio">Source</a></div>
+          <div class="links mono"><a href="https://ledgio.pages.dev/" target="_blank" rel="noopener noreferrer">Live app</a><a href="https://github.com/Soul-Ninja/Ledgio" target="_blank" rel="noopener noreferrer">Source</a></div>
         </article>
         <article class="card">
           <span class="no" aria-hidden="true">04</span>
@@ -329,7 +349,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <p>Automated FDR monitoring platform for AICTE, built as a team entry for Smart India Hackathon 2026. Vision AI document verification with a human-in-the-loop queue.</p>
           <p class="fact">Escalations over email, SMS and WhatsApp, in 7 Indian languages.</p>
           <ul class="chips mono"><li>TypeScript</li><li>Vision AI</li><li>Node.js</li></ul>
-          <div class="links mono"><a href="https://github.com/Soul-Ninja/fdr-shield">Source</a></div>
+          <div class="links mono"><a href="https://github.com/Soul-Ninja/fdr-shield" target="_blank" rel="noopener noreferrer">Source</a></div>
         </article>
         <article class="card">
           <span class="no" aria-hidden="true">05</span>
@@ -338,7 +358,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <p>A POSIX-style shell built on raw kernel syscalls: process creation, I/O redirection, signal handling and zombie prevention.</p>
           <p class="fact">fork, execvp, dup2 and wait, with no shell library underneath.</p>
           <ul class="chips mono"><li>Python</li><li>OS internals</li><li>Syscalls</li></ul>
-          <div class="links mono"><a href="https://github.com/Soul-Ninja/mash-os-project">Source</a></div>
+          <div class="links mono"><a href="https://github.com/Soul-Ninja/mash-os-project" target="_blank" rel="noopener noreferrer">Source</a></div>
         </article>
       </div>
       <div class="meter" aria-hidden="true"><i id="bar"></i></div>
@@ -417,10 +437,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     <div class="wrap">
       <div class="pane brk rv wipe">
         <h2 data-decode>Open a channel</h2>
-        <div><a class="mail" href="mailto:joshiaman2006@gmail.com">joshiaman2006@gmail.com</a></div>
+        <div class="copy-wrap">
+          <a class="mail" href="mailto:joshiaman2006@gmail.com">joshiaman2006@gmail.com</a>
+          <button type="button" class="copy-pill mono" id="copybtn" aria-label="Copy email address to clipboard">[ Copy signal ]</button>
+          <div id="copynotice" class="mono copynotice" aria-live="polite"></div>
+        </div>
         <div class="btns mono">
-          <a class="btn" href="https://github.com/Soul-Ninja">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/aman-joshi-ai/">LinkedIn</a>
+          <a class="btn" href="https://github.com/Soul-Ninja" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/aman-joshi-ai/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -531,7 +555,7 @@ addEventListener('pointermove', e => {
   hero.style.setProperty('--mx', (mx / W - .5) * 2);
   hero.style.setProperty('--my', (my / H - .5) * 2);
 });
-document.addEventListener('pointerover', e => cur.classList.toggle('hot', !!e.target.closest('a,.card,.chips li')));
+document.addEventListener('pointerover', e => cur.classList.toggle('hot', !!e.target.closest('a,button,.card,.chips li')));
 document.addEventListener('pointerleave', () => { mx = my = -999; });
 
 // ---- findings: pin the section and let vertical scroll drive the rail ----
@@ -589,6 +613,26 @@ const spy = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) dots.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
 }), {rootMargin: '-45% 0px -45% 0px'});
 $$('main section[id]').forEach(s => spy.observe(s));
+
+// ---- copy email to clipboard with tactical HUD feedback ----
+const copyBtn = $('#copybtn'), copyNotice = $('#copynotice');
+let copyTimer = null;
+if (copyBtn) {
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('joshiaman2006@gmail.com');
+      copyNotice.textContent = '>> SIGNAL COPIED TO CLIPBOARD // ENCRYPTED';
+      copyNotice.classList.add('show');
+      clearTimeout(copyTimer);
+      copyTimer = setTimeout(() => copyNotice.classList.remove('show'), 2600);
+    } catch (err) {
+      copyNotice.textContent = '>> joshiaman2006@gmail.com';
+      copyNotice.classList.add('show');
+      clearTimeout(copyTimer);
+      copyTimer = setTimeout(() => copyNotice.classList.remove('show'), 3000);
+    }
+  });
+}
 </script>
 </body>
 </html>
