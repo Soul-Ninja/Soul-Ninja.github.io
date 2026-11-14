@@ -149,7 +149,7 @@ section{padding:clamp(80px,12vw,150px) 0}
 .head>p{background:var(--text);color:#050505;padding:6px 14px;margin:0;transform:skewX(-9deg)}
 .head>p .red{color:#a3000d}
 /* inked photo: black ink multiplied over a red panel, halftone fading in from one corner */
-.ink{position:relative;display:block;background:var(--accent);overflow:hidden}
+.ink{position:relative;display:block;background:var(--text);overflow:hidden}
 .ink img{display:block;width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
 .ink::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle,#050505 1.3px,transparent 1.8px) 0 0/7px 7px;
   -webkit-mask-image:linear-gradient(315deg,#000,transparent 55%);mask-image:linear-gradient(315deg,#000,transparent 55%);opacity:.75}
